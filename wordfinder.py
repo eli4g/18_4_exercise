@@ -41,7 +41,7 @@ class WordFinder:
         
         self.text_list = list(self.text.split(" "))
         
-        return f"{len(list)} words read"
+        print(f"{len(self.text_list)} words read")
         
         
     def random(self):

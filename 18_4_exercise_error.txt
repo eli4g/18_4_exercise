@@ -1,0 +1,75 @@
+PS E:\Google Drive\Education\Springboard\Code Files\18_python> python3 -m doctest -v "e:\Google Drive\Education\Springboard\Code Files\18_python\18_4_python_oop\18_4_exercise\wordfinder.py"  
+Trying:
+    wf = WordFinder('words.txt')
+Expecting:
+    3 words read
+**********************************************************************
+File "e:\Google Drive\Education\Springboard\Code Files\18_python\18_4_python_oop\18_4_exercise\wordfinder.py", line 11, in wordfinder.WordFinder
+Failed example:
+    wf = WordFinder('words.txt')
+Exception raised:
+    Traceback (most recent call last):
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.7_3.7.2544.0_x64__qbz5n2kfra8p0\lib\doctest.py", line 1337, in __run
+        compileflags, 1), test.globs)
+      File "<doctest wordfinder.WordFinder[0]>", line 1, in <module>
+        wf = WordFinder('words.txt')
+      File "e:\Google Drive\Education\Springboard\Code Files\18_python\18_4_python_oop\18_4_exercise\wordfinder.py", line 34, in __init__
+        self.file = open(file_path, 'r')
+    FileNotFoundError: [Errno 2] No such file or directory: 'words.txt'
+Trying:
+    wf.random()
+Expecting:
+    'cat'
+**********************************************************************
+File "e:\Google Drive\Education\Springboard\Code Files\18_python\18_4_python_oop\18_4_exercise\wordfinder.py", line 14, in wordfinder.WordFinder
+Failed example:
+    wf.random()
+Exception raised:
+    Traceback (most recent call last):
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.7_3.7.2544.0_x64__qbz5n2kfra8p0\lib\doctest.py", line 1337, in __run
+        compileflags, 1), test.globs)
+      File "<doctest wordfinder.WordFinder[1]>", line 1, in <module>
+        wf.random()
+    NameError: name 'wf' is not defined
+Trying:
+    wf.random()
+Expecting:
+    'cat'
+**********************************************************************
+File "e:\Google Drive\Education\Springboard\Code Files\18_python\18_4_python_oop\18_4_exercise\wordfinder.py", line 17, in wordfinder.WordFinder
+Failed example:
+    wf.random()
+Exception raised:
+    Traceback (most recent call last):
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.7_3.7.2544.0_x64__qbz5n2kfra8p0\lib\doctest.py", line 1337, in __run
+        compileflags, 1), test.globs)
+      File "<doctest wordfinder.WordFinder[2]>", line 1, in <module>
+        wf.random()
+    NameError: name 'wf' is not defined
+Trying:
+    wf.random()
+Expecting:
+    'porcupine'
+**********************************************************************
+File "e:\Google Drive\Education\Springboard\Code Files\18_python\18_4_python_oop\18_4_exercise\wordfinder.py", line 20, in wordfinder.WordFinder
+Failed example:
+    wf.random()
+Exception raised:
+    Traceback (most recent call last):
+      File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.7_3.7.2544.0_x64__qbz5n2kfra8p0\lib\doctest.py", line 1337, in __run
+        compileflags, 1), test.globs)
+      File "<doctest wordfinder.WordFinder[3]>", line 1, in <module>
+        compileflags, 1), test.globs)
+      File "<doctest wordfinder.WordFinder[4]>", line 1, in <module>
+        wf.random()
+    NameError: name 'wf' is not defined
+3 items had no tests:
+    wordfinder
+    wordfinder.WordFinder.__init__
+    wordfinder.WordFinder.random
+**********************************************************************
+1 items had failures:
+   5 of   5 in wordfinder.WordFinder
+5 tests in 4 items.
+0 passed and 5 failed.
+***Test Failed*** 5 failures.
